@@ -1,6 +1,6 @@
-FILES = main.c
 CC = gcc
 CFLAGS = -g
 DLLS = pthread
-main: $(FILES)
-	$(CC) $(FILES) -l $(DLLS) $(CFLAGS) -o main
+
+basic_thread: basic_thread.c
+	$(CC) basic_thread.c -l $(DLLS) $(CFLAGS) -o main
